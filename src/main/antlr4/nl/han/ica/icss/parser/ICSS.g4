@@ -34,5 +34,24 @@ CAPITAL_IDENT: [A-Z] [A-Za-z0-9_]*;
 WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
+stylesheet: variableAssignment+ stylerule+ EOF;
 
-stylesheet: EOF;
+stylerule: selector OPEN_BRACE declaration+ CLOSE_BRACE;
+selector: ID_IDENT|CLASS_IDENT|LOWER_IDENT;
+
+declaration: declarationWithOperations|declarationWithoutOperations;
+declarationWithoutOperations: propertyName COLON value SEMICOLON;
+declarationWithOperations: propertyName COLON value operation+ SEMICOLON;
+value: COLOR | PIXELSIZE | PERCENTAGE | SCALAR | variableName;
+
+propertyName: background_color | width | color;
+
+background_color: 'background-color';
+width: 'width';
+color: 'color';
+
+
+variableAssignment: variableName ASSIGNMENT_OPERATOR value SEMICOLON;
+variableName:ID_IDENT|CLASS_IDENT|LOWER_IDENT|CAPITAL_IDENT;
+operation: operator value;
+operator: MIN | PLUS | MUL;
