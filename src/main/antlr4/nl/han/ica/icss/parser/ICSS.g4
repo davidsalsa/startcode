@@ -39,19 +39,19 @@ stylesheet: variableAssignment+ stylerule+ EOF;
 stylerule: selector OPEN_BRACE declaration+ CLOSE_BRACE;
 selector: ID_IDENT|CLASS_IDENT|LOWER_IDENT;
 
-declaration: declarationWithOperations|declarationWithoutOperations;
+declaration: declarationWithOperations|declarationWithoutOperations | variableAssignment |stylerule;
 declarationWithoutOperations: propertyName COLON value SEMICOLON;
 declarationWithOperations: propertyName COLON value operation+ SEMICOLON;
 value: COLOR | PIXELSIZE | PERCENTAGE | SCALAR | variableName;
 
-propertyName: background_color | width | color;
+propertyName: background_color | width | color | variableName;
 
 background_color: 'background-color';
 width: 'width';
 color: 'color';
 
-
 variableAssignment: variableName ASSIGNMENT_OPERATOR value SEMICOLON;
 variableName:ID_IDENT|CLASS_IDENT|LOWER_IDENT|CAPITAL_IDENT;
 operation: operator value;
 operator: MIN | PLUS | MUL;
+
