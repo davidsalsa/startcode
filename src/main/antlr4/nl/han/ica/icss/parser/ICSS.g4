@@ -34,15 +34,26 @@ CAPITAL_IDENT: [A-Z] [A-Za-z0-9_]*;
 WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
-stylesheet: variableAssignment+ stylerule+ EOF;
-
+stylesheet:  variableAssignment* stylerule* EOF;
 stylerule: selector OPEN_BRACE declaration+ CLOSE_BRACE;
-selector: ID_IDENT|CLASS_IDENT|LOWER_IDENT;
 
-declaration: declarationWithOperations|declarationWithoutOperations | variableAssignment |stylerule;
+
+classSelector: CLASS_IDENT;
+idSelector: ID_IDENT;
+tagSelector: LOWER_IDENT;
+
+selector: classSelector|idSelector|tagSelector;
+
+declaration: declarationWithOperations| declarationWithoutOperations | variableAssignment |stylerule;
 declarationWithoutOperations: propertyName COLON value SEMICOLON;
 declarationWithOperations: propertyName COLON value operation+ SEMICOLON;
-value: COLOR | PIXELSIZE | PERCENTAGE | SCALAR | variableName;
+
+pixelLiteral: PIXELSIZE;
+colorLiteral: COLOR;
+percentageLiteral: PERCENTAGE;
+scalarLiteral: SCALAR;
+
+value: pixelLiteral | colorLiteral | percentageLiteral | scalarLiteral | variableName;
 
 propertyName: background_color | width | color | variableName;
 
@@ -53,5 +64,10 @@ color: 'color';
 variableAssignment: variableName ASSIGNMENT_OPERATOR value SEMICOLON;
 variableName:ID_IDENT|CLASS_IDENT|LOWER_IDENT|CAPITAL_IDENT;
 operation: operator value;
-operator: MIN | PLUS | MUL;
+
+addOperation: PLUS;
+subtractOperation: MIN;
+multiplyOperation: MUL;
+
+operator: subtractOperation | addOperation | multiplyOperation;
 

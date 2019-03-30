@@ -1,4 +1,4 @@
-// Generated from C:/Users/david/startcode-2019.2.1/startcode/src/main/antlr4/nl/han/ica/icss/parser\ICSS.g4 by ANTLR 4.7.2
+// Generated from C:/Users/David/Documents/startcode/src/main/antlr4/nl/han/ica/icss/parser\ICSS.g4 by ANTLR 4.7.2
 package nl.han.ica.icss.parser;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -23,6 +23,24 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitStylerule(ICSSParser.StyleruleContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link ICSSParser#classSelector}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitClassSelector(ICSSParser.ClassSelectorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#idSelector}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIdSelector(ICSSParser.IdSelectorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#tagSelector}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitTagSelector(ICSSParser.TagSelectorContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link ICSSParser#selector}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -46,6 +64,30 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitDeclarationWithOperations(ICSSParser.DeclarationWithOperationsContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#pixelLiteral}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPixelLiteral(ICSSParser.PixelLiteralContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#colorLiteral}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitColorLiteral(ICSSParser.ColorLiteralContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#percentageLiteral}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPercentageLiteral(ICSSParser.PercentageLiteralContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#scalarLiteral}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitScalarLiteral(ICSSParser.ScalarLiteralContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ICSSParser#value}.
 	 * @param ctx the parse tree
@@ -94,6 +136,24 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitOperation(ICSSParser.OperationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#addOperation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAddOperation(ICSSParser.AddOperationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#subtractOperation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitSubtractOperation(ICSSParser.SubtractOperationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#multiplyOperation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMultiplyOperation(ICSSParser.MultiplyOperationContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ICSSParser#operator}.
 	 * @param ctx the parse tree
