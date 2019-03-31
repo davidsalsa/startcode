@@ -35,18 +35,16 @@ WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
 stylesheet:  variableAssignment* stylerule* EOF;
-stylerule: selector OPEN_BRACE declaration+ CLOSE_BRACE;
+stylerule: selector OPEN_BRACE declaration* CLOSE_BRACE;
 
 
 classSelector: CLASS_IDENT;
 idSelector: ID_IDENT;
-tagSelector: LOWER_IDENT;
+tagSelector: LOWER_IDENT |CAPITAL_IDENT;
 
 selector: classSelector|idSelector|tagSelector;
 
-declaration: declarationWithOperations| declarationWithoutOperations | variableAssignment |stylerule;
-declarationWithoutOperations: propertyName COLON value SEMICOLON;
-declarationWithOperations: propertyName COLON value operation+ SEMICOLON;
+declaration: propertyName COLON operation* SEMICOLON | variableAssignment |stylerule;
 
 pixelLiteral: PIXELSIZE;
 colorLiteral: COLOR;
@@ -62,12 +60,7 @@ width: 'width';
 color: 'color';
 
 variableAssignment: variableName ASSIGNMENT_OPERATOR value SEMICOLON;
-variableName:ID_IDENT|CLASS_IDENT|LOWER_IDENT|CAPITAL_IDENT;
-operation: operator value;
+variableName: selector;
+operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation;
 
-addOperation: PLUS;
-subtractOperation: MIN;
-multiplyOperation: MUL;
-
-operator: subtractOperation | addOperation | multiplyOperation;
 

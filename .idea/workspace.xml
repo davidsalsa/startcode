@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fed8b3ac-1e21-43ad-bdb6-6b399b7b9784" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/gen/ICSS.interp" afterPath="$PROJECT_DIR$/gen/ICSS.interp" />
       <change beforePath="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" afterPath="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSListener.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSListener.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java" />
@@ -17,17 +15,27 @@
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSBaseListener.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSBaseListener.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSBaseVisitor.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSBaseVisitor.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSListener.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSListener.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$AddOperationContext.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$Background_colorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$Background_colorContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ClassSelectorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ClassSelectorContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ColorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ColorContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ColorLiteralContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ColorLiteralContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationContext.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithOperationsContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithOperationsContext.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithoutOperationsContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithoutOperationsContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithOperationsContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$DeclarationWithoutOperationsContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$IdSelectorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$IdSelectorContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$MultiplyOperationContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$MultiplyOperationContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$OperationContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$OperationContext.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$OperatorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$OperatorContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$OperatorContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PercentageLiteralContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PercentageLiteralContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PixelLiteralContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PixelLiteralContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PropertyNameContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$PropertyNameContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ScalarLiteralContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ScalarLiteralContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$SelectorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$SelectorContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$StyleruleContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$StyleruleContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$StylesheetContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$StylesheetContext.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$SubtractOperationContext.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$TagSelectorContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$TagSelectorContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ValueContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$ValueContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$VariableAssignmentContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$VariableAssignmentContext.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$VariableNameContext.class" afterPath="$PROJECT_DIR$/target/classes/nl/han/ica/icss/parser/ICSSParser$VariableNameContext.class" />
@@ -43,23 +51,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/icsstool$ParserTest_testParseLevel2.coverage" NAME="ParserTest.testParseLevel2 Coverage Results" MODIFIED="1554043631806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>nl.han.ica.icss.parser.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ICSS.g4" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ICSS.g4" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICSSBaseListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="289" column="20" lean-forward="true" selection-start-line="289" selection-start-column="20" selection-end-line="289" selection-end-column="20" />
+            <state relative-caret-position="181">
+              <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -68,21 +71,32 @@
       <file leaf-file-name="ASTListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1214">
-              <caret line="50" column="64" lean-forward="true" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+            <state relative-caret-position="1223">
+              <caret line="173" column="21" lean-forward="false" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
               <folding>
-                <element signature="e#1065#1066#0" expanded="true" />
-                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1114#1115#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ICSSBaseVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/icss/parser/ParserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+            <state relative-caret-position="637">
+              <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -91,8 +105,8 @@
       <file leaf-file-name="Fixtures.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/icss/parser/Fixtures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+            <state relative-caret-position="330">
+              <caret line="258" column="13" lean-forward="true" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -106,6 +120,12 @@
       <find>context</find>
       <find>varia</find>
       <find>exitVa</find>
+      <find>property</find>
+      <find>Literal</find>
+      <find>variable</find>
+      <find>variablename</find>
+      <find>enterad</find>
+      <find>operation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,12 +140,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/level2.icss" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" />
         <option value="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" />
       </list>
@@ -174,9 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,15 +297,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="icss" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="icsstool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="startcode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="icss" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,6 +341,9 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,7 +376,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParserTest.testParseLevel2">
+  <component name="RunManager" selected="JUnit.ParserTest.testParseLevel3">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
@@ -403,31 +415,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="ParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="nl.han.ica.icss.parser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="icsstool" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="nl.han.ica.icss.parser" />
-      <option name="MAIN_CLASS_NAME" value="nl.han.ica.icss.parser.ParserTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="ParserTest.testParseLevel0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -504,6 +491,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="ParserTest.testParseLevel3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="nl.han.ica.icss.parser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="icsstool" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="nl.han.ica.icss.parser" />
+      <option name="MAIN_CLASS_NAME" value="nl.han.ica.icss.parser.ParserTest" />
+      <option name="METHOD_NAME" value="testParseLevel3" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -566,18 +578,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel0" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel2" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel1" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel0" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel2" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel1" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel0" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ParserTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel3" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel1" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParserTest.testParseLevel0" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -611,44 +623,46 @@
       <workItem from="1553965809794" duration="913000" />
       <workItem from="1553966749120" duration="685000" />
       <workItem from="1553969419661" duration="1275000" />
-      <workItem from="1553970877118" duration="9246000" />
+      <workItem from="1553970877118" duration="9868000" />
+      <workItem from="1554038306612" duration="10345000" />
+      <workItem from="1554049105644" duration="3745000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParserTest_testParseLevel1 - 2019.03.30 at 21h 59m 00s.xml">
+    <history-entry file="ParserTest_testParseLevel0 - 2019.03.31 at 20h 02m 08s.xml">
+      <configuration name="ParserTest.testParseLevel0" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserTest_testParseLevel1 - 2019.03.31 at 20h 02m 12s.xml">
       <configuration name="ParserTest.testParseLevel1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_testParseLevel1 - 2019.03.30 at 22h 00m 38s.xml">
-      <configuration name="ParserTest.testParseLevel1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserTest_testParseLevel1 - 2019.03.30 at 22h 02m 57s.xml">
-      <configuration name="ParserTest.testParseLevel1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserTest_testParseLevel1 - 2019.03.30 at 22h 06m 03s.xml">
-      <configuration name="ParserTest.testParseLevel1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserTest_testParseLevel1 - 2019.03.30 at 22h 19m 48s.xml">
-      <configuration name="ParserTest.testParseLevel1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParserTest_testParseLevel2 - 2019.03.30 at 22h 06m 09s.xml">
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 17h 36m 42s.xml">
       <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_testParseLevel2 - 2019.03.30 at 22h 09m 50s.xml">
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 17h 51m 35s.xml">
       <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_testParseLevel2 - 2019.03.30 at 22h 19m 21s.xml">
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 17h 58m 12s.xml">
       <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_testParseLevel2 - 2019.03.30 at 22h 19m 52s.xml">
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 18h 04m 06s.xml">
       <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParserTest_testParseLevel2 - 2019.03.30 at 22h 23m 00s.xml">
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 18h 07m 45s.xml">
       <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserTest_testParseLevel2 - 2019.03.31 at 20h 02m 14s.xml">
+      <configuration name="ParserTest.testParseLevel2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserTest_testParseLevel3 - 2019.03.31 at 20h 02m 18s.xml">
+      <configuration name="ParserTest.testParseLevel3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserTest_testParseLevel3 - 2019.03.31 at 20h 08m 42s.xml">
+      <configuration name="ParserTest.testParseLevel3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27066000" />
+    <option name="totallyTimeSpent" value="41778000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,35 +677,36 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22974963" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13486141" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13539445" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32826087" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42826086" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31343284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31982943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57934785" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -732,209 +747,263 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="22" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="354">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar!/org/junit/jupiter/engine/execution/ThrowableCollector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar!/org/junit/platform/engine/support/hierarchical/SingleTestExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/stream/AbstractPipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-          </folding>
+          <caret line="470" column="0" lean-forward="false" selection-start-line="470" selection-start-column="0" selection-end-line="470" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/stream/ForEachOps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="175">
+          <caret line="173" column="0" lean-forward="false" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/stream/ReferencePipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="168">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar!/org/junit/jupiter/engine/execution/ExecutableInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        <state relative-caret-position="159">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar!/org/junit/platform/engine/support/hierarchical/HierarchicalTestEngine.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="255">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level2.icss">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.1.0/junit-platform-engine-1.1.0.jar!/org/junit/platform/engine/support/hierarchical/HierarchicalTestExecutor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="159">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="185">
+          <caret line="624" column="0" lean-forward="false" selection-start-line="624" selection-start-column="0" selection-end-line="624" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level2.icss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level3.icss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/ReduceSwitchRules.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/EvalExpressions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Stylesheet.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/ConstantReference.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/PixelLiteral.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/ConstantDefinition.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/AddOperation.java" />
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/antlr4/nl/han/ica/icss/parser/ICSSBaseListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/generator/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/gui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="true" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Literal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/selectors/ClassSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/selectors/TagSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/operations/AddOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Operation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/PropertyName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/VariableReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Declaration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/operations/MultiplyOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/gui/ASTPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icsstool.iml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar!/org/antlr/v4/runtime/RuleContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar!/org/antlr/v4/runtime/ParserRuleContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.1.0/junit-platform-commons-1.1.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.1.0/junit-jupiter-engine-5.1.0.jar!/org/junit/jupiter/engine/descriptor/TestMethodTestDescriptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar!/org/antlr/v4/runtime/tree/ParseTreeWalker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/VariableReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Literal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/literals/ColorLiteral.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#211#212#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/VariableAssignment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1251" column="0" lean-forward="false" selection-start-line="1251" selection-start-column="0" selection-end-line="1251" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Stylesheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="487" column="0" lean-forward="false" selection-start-line="487" selection-start-column="0" selection-end-line="487" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Selector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Stylerule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/ASTNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/Declaration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/PropertyName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -942,71 +1011,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/selectors/IdSelector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/VariableAssignment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/types/ExpressionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-620">
-          <caret line="148" column="24" lean-forward="true" selection-start-line="148" selection-start-column="24" selection-end-line="148" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="151" column="28" lean-forward="false" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/ast/operations/AddOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/level2.icss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/level0.icss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level1.icss">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="638">
+          <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="94" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,14 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1034,61 +1074,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level3.icss">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-1105">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/level2.icss">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/level3.icss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/icss/parser/Fixtures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="289" column="20" lean-forward="true" selection-start-line="289" selection-start-column="20" selection-end-line="289" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1214">
-          <caret line="50" column="64" lean-forward="true" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding>
-            <element signature="e#1065#1066#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/icss/parser/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="330">
+          <caret line="258" column="13" lean-forward="true" selection-start-line="258" selection-start-column="13" selection-end-line="258" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="57" column="12" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="181">
+          <caret line="30" column="35" lean-forward="true" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1223">
+          <caret line="173" column="21" lean-forward="false" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1114#1115#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="53" lean-forward="false" selection-start-line="0" selection-start-column="53" selection-end-line="0" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/nl/han/ica/icss/parser/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="77" column="18" lean-forward="false" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="18" />
           <folding />
         </state>
       </provider>

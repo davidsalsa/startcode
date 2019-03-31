@@ -53,18 +53,6 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitDeclaration(ICSSParser.DeclarationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ICSSParser#declarationWithoutOperations}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeclarationWithoutOperations(ICSSParser.DeclarationWithoutOperationsContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ICSSParser#declarationWithOperations}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeclarationWithOperations(ICSSParser.DeclarationWithOperationsContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link ICSSParser#pixelLiteral}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -131,33 +119,24 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVariableName(ICSSParser.VariableNameContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ICSSParser#operation}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitOperation(ICSSParser.OperationContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ICSSParser#addOperation}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAddOperation(ICSSParser.AddOperationContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ICSSParser#subtractOperation}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitSubtractOperation(ICSSParser.SubtractOperationContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link ICSSParser#multiplyOperation}.
+	 * Visit a parse tree produced by the {@code multiplyOperation}
+	 * labeled alternative in {@link ICSSParser#operation}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
 	T visitMultiplyOperation(ICSSParser.MultiplyOperationContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link ICSSParser#operator}.
+	 * Visit a parse tree produced by the {@code inputvalue}
+	 * labeled alternative in {@link ICSSParser#operation}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitOperator(ICSSParser.OperatorContext ctx);
+	T visitInputvalue(ICSSParser.InputvalueContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code plusOrMinOperation}
+	 * labeled alternative in {@link ICSSParser#operation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPlusOrMinOperation(ICSSParser.PlusOrMinOperationContext ctx);
 }

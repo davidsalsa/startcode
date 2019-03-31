@@ -12,6 +12,7 @@ import nl.han.ica.icss.ast.operations.SubtractOperation;
 import nl.han.ica.icss.ast.selectors.ClassSelector;
 import nl.han.ica.icss.ast.selectors.IdSelector;
 import nl.han.ica.icss.ast.selectors.TagSelector;
+import org.antlr.v4.runtime.atn.SemanticContext;
 
 /**
  * This class extracts the ICSS Abstract Syntax Tree from the Antlr Parse tree.
@@ -41,10 +42,10 @@ public class ASTListener extends ICSSBaseListener {
 
 	@Override
 	public void enterStylerule(ICSSParser.StyleruleContext ctx) {
-		Stylerule styleRule = new Stylerule();
-		currentContainer.peek().addChild(styleRule);
+		Stylerule stylerule = new Stylerule();
+		currentContainer.peek().addChild(stylerule);
 
-		currentContainer.push(styleRule);
+		currentContainer.push(stylerule);
 	}
 
 	@Override
@@ -121,26 +122,50 @@ public class ASTListener extends ICSSBaseListener {
 		}
 	}
 
-	@Override public void enterOperation(ICSSParser.OperationContext ctx) {
-		Operation operation = getOperation(ctx);
-		currentContainer.peek().addChild(operation);
-		currentContainer.push(operation);
+
+	public void enterMultiplyOperation(ICSSParser.MultiplyOperationContext ctx){
+		MultiplyOperation multiplyOperation = new MultiplyOperation();
+		currentContainer.peek().addChild(multiplyOperation);
+		currentContainer.push(multiplyOperation);
 	}
 
-	@Override public void exitOperation(ICSSParser.OperationContext ctx) {
+	@Override public void exitMultiplyOperation(ICSSParser.MultiplyOperationContext ctx) {
 		if (!currentContainer.empty()) {
 			currentContainer.pop();
 		}
 	}
 
-	private Operation getOperation(ICSSParser.OperationContext ctx){
-		if(ctx.operator().addOperation() != null){
+	@Override public void enterPlusOrMinOperation(ICSSParser.PlusOrMinOperationContext ctx) {
+		Operation operation = getOperation(ctx);
+		currentContainer.peek().addChild(operation);
+		currentContainer.push(operation);
+	}
+
+	@Override public void exitPlusOrMinOperation(ICSSParser.PlusOrMinOperationContext ctx) {
+		if (!currentContainer.empty()) {
+			currentContainer.pop();
+		}
+	}
+
+	@Override public void enterPropertyName(ICSSParser.PropertyNameContext ctx) {
+		PropertyName propertyName = new PropertyName(ctx.getText());
+		currentContainer.peek().addChild(propertyName);
+		currentContainer.push(propertyName);
+	}
+
+	@Override public void exitPropertyName(ICSSParser.PropertyNameContext ctx) {
+		if (!currentContainer.empty()) {
+			currentContainer.pop();
+		}
+	}
+
+	private Operation getOperation(ICSSParser.PlusOrMinOperationContext ctx){
+		if(ctx.PLUS()!= null){
 			return new AddOperation();
-		} else if (ctx.operator().subtractOperation() != null){
+		} else if (ctx.MIN() != null){
 			return new SubtractOperation();
-		} else if (ctx.operator().multiplyOperation() != null){
-			return new MultiplyOperation();
-		} else return null;
+		}
+		return  null;
 	}
 
 	private Expression getLiteral(ICSSParser.ValueContext ctx) {
