@@ -1,5 +1,6 @@
 package nl.han.ica.icss.checker;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -12,5 +13,9 @@ public class Checker {
 
     public void check(AST ast) {
         variableTypes = new LinkedList<>();
+
+
+
     }
+
 }
