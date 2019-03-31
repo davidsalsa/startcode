@@ -35,8 +35,7 @@ WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
 stylesheet:  variableAssignment* stylerule* EOF;
-stylerule: selector OPEN_BRACE declaration* CLOSE_BRACE;
-
+stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE_BRACE;
 
 classSelector: CLASS_IDENT;
 idSelector: ID_IDENT;
@@ -44,7 +43,7 @@ tagSelector: LOWER_IDENT |CAPITAL_IDENT;
 
 selector: classSelector|idSelector|tagSelector;
 
-declaration: propertyName COLON operation* SEMICOLON | variableAssignment |stylerule;
+declaration: propertyName COLON operation* SEMICOLON;
 
 pixelLiteral: PIXELSIZE;
 colorLiteral: COLOR;
