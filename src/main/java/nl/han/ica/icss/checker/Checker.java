@@ -52,7 +52,7 @@ public class Checker {
         }
     }
 
-    public void checkOperation(ASTNode node) {
+    public void checkOperation(ASTNode node) { //looks for operations
         for (ASTNode child : node.getChildren()) {
             if (child instanceof Declaration) {
                 Expression expression = ((Declaration) child).expression;
@@ -63,7 +63,7 @@ public class Checker {
         }
     }
 
-    public ASTNode recOperations(ASTNode astNode) {
+    public ASTNode recOperations(ASTNode astNode) { //recursively go through all the nodes in an operation
         if (astNode instanceof ColorLiteral) { //Checks for color literals in operations
             astNode.setError("Cannot use color literals in an operation!");
         } else if (astNode instanceof Literal) {
@@ -73,10 +73,10 @@ public class Checker {
                 return recOperations(definedVariables.get(((VariableReference) astNode).name));
             } else astNode.setError("Error! Reference to undefined variable!"); //else return undefined var error
 
-        } else if (astNode instanceof Operation) {
-            for (ASTNode child : astNode.getChildren()) {
-                recOperations(child);
-                checkUndefinedVariables(child);
+        } else if (astNode instanceof Operation) { //if the node is an operation
+            for (ASTNode child : astNode.getChildren()) { //for every child
+                recOperations(child); //Go through the children nodes
+                checkUndefinedVariables(child); //check if the children use undefined variables.
             }
         }
         checkMul(astNode);
