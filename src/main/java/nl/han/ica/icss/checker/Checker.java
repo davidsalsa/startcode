@@ -1,6 +1,5 @@
 package nl.han.ica.icss.checker;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -8,23 +7,24 @@ import java.util.LinkedList;
 
 import nl.han.ica.icss.ast.*;
 import nl.han.ica.icss.ast.literals.ColorLiteral;
-import nl.han.ica.icss.ast.literals.PercentageLiteral;
-import nl.han.ica.icss.ast.literals.PixelLiteral;
 import nl.han.ica.icss.ast.literals.ScalarLiteral;
 import nl.han.ica.icss.ast.operations.AddOperation;
 import nl.han.ica.icss.ast.operations.MultiplyOperation;
 import nl.han.ica.icss.ast.operations.SubtractOperation;
 import nl.han.ica.icss.ast.types.*;
 
-import javax.sound.midi.SysexMessage;
 
 public class Checker {
 
     private LinkedList<HashMap<String, ExpressionType>> variableTypes;
+    HashMap<String, Expression> definedVariables;
+
+    public Checker() {
+        definedVariables = new HashMap<>();
+    }
 
     public void check(AST ast) {
         ArrayList<ASTNode> body = ast.root.body;
-        HashMap<String, Expression> definedVariables = new HashMap<>(); //The hashmap contains all defined variables.
 
         for (ASTNode nodes : body) {
             if (nodes instanceof VariableAssignment) {
@@ -36,65 +36,69 @@ public class Checker {
 
         for (ASTNode node : body) {
             if (node instanceof Stylerule) {
-                checkUndefinedVariables(node, definedVariables);
-                checkOperation(node, definedVariables);
-                checkDeclarations(node, definedVariables);
-            }else if (node instanceof VariableAssignment) {
-                checkUndefinedVariables(node, definedVariables);
-                checkOperation(node, definedVariables);
+                checkUndefinedVariables(node);
+                checkOperation(node);
+                checkDeclarations(node);
+            } else if (node instanceof VariableAssignment) {
+                checkUndefinedVariables(node);
+                checkOperation(node);
             }
         }
     }
 
 
-    public void checkDeclarations(ASTNode node, HashMap<String, Expression> definedVariables){
-        for(ASTNode child : node.getChildren()){
-            if(child instanceof Declaration) {
+    public void checkDeclarations(ASTNode node) {
+        for (ASTNode child : node.getChildren()) {
+            if (child instanceof Declaration) {
             }
         }
     }
 
-    public void checkOperation(ASTNode node, HashMap<String, Expression> definedVariables) {
-        HashMap<String, Expression> operation;
+    public void checkOperation(ASTNode node) {
         for (ASTNode child : node.getChildren()) {
             if (child instanceof Declaration) {
                 Expression expression = ((Declaration) child).expression;
                 if (expression instanceof Operation) {
-                    recOperations(expression, definedVariables);
+                    recOperations(expression);
 
                 }
             }
         }
     }
 
-    public ASTNode recOperations(ASTNode astNode, HashMap<String, Expression> definedVariables) {
+    public ASTNode recOperations(ASTNode astNode) {
         if (astNode instanceof ColorLiteral) { //Checks for color literals in operations
             astNode.setError("Cannot use color literals in an operation!");
         } else if (astNode instanceof Literal) {
             return astNode;
         } else if (astNode instanceof VariableReference) { //if there's a variable reference return the definition.
             return definedVariables.get(((VariableReference) astNode).name);
-        } else {
+        } else if(astNode instanceof Operation) {
             for (ASTNode child : astNode.getChildren()) {
-                recOperations(child, definedVariables);
+                recOperations(child);
             }
         }
-        checkMul(astNode, definedVariables);
+        checkMul(astNode);
+        checkAdd(astNode);
         return astNode;
     }
 
-    public void checkMul(ASTNode astNode, HashMap<String, Expression> definedVariables) { //Check if mul operation contains scalar.
+    public void checkMul(ASTNode astNode) { //Check if mul operation contains scalar.
         if (astNode instanceof MultiplyOperation) {
-            ASTNode left = recOperations(((MultiplyOperation) astNode).lhs, definedVariables);
-            ASTNode right = recOperations(((MultiplyOperation) astNode).rhs, definedVariables);
+            ASTNode left = recOperations(((MultiplyOperation) astNode).lhs);
+            ASTNode right = recOperations(((MultiplyOperation) astNode).rhs);
 
-            if(!(left instanceof ScalarLiteral) && !(right instanceof ScalarLiteral)){
+            if (!(left instanceof ScalarLiteral) && !(right instanceof ScalarLiteral)) {
                 astNode.setError("Multiply operations requires at least one scalar value!");
             }
         }
     }
 
-    public void checkUndefinedVariables(ASTNode node, HashMap<String, Expression> definedVariables) { //Check if the hashmap contains the variable specified.
+    public void checkAdd(ASTNode astNode) {
+
+    }
+
+    public void checkUndefinedVariables(ASTNode node) { //Check if the hashmap contains the variable specified.
         for (ASTNode child : node.getChildren()) {
             if (child instanceof Declaration) {
                 if (((Declaration) child).expression instanceof VariableReference) {
