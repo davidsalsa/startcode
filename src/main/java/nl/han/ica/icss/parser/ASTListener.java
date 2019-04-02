@@ -35,7 +35,7 @@ public class ASTListener extends ICSSBaseListener {
     }
 
 	@Override
-	public void enterStylesheet(ICSSParser.StylesheetContext ctx) {
+	public void enterStylesheet(ICSSParser.StylesheetContext ctx) { //enter stack
 		currentContainer = new Stack<>();
 		currentContainer.push(ast.root);
 	}
@@ -159,7 +159,7 @@ public class ASTListener extends ICSSBaseListener {
 		}
 	}
 
-	private Operation getOperation(ICSSParser.PlusOrMinOperationContext ctx){
+	private Operation getOperation(ICSSParser.PlusOrMinOperationContext ctx){ //returns the right type of operation
 		if(ctx.PLUS()!= null){
 			return new AddOperation();
 		} else if (ctx.MIN() != null){
@@ -168,7 +168,7 @@ public class ASTListener extends ICSSBaseListener {
 		return  null;
 	}
 
-	private Expression getLiteral(ICSSParser.ValueContext ctx) {
+	private Expression getLiteral(ICSSParser.ValueContext ctx) {//returns the right type of literal
 		if (ctx.pixelLiteral() != null) {
 			return new PixelLiteral(ctx.pixelLiteral().getText());
 		} else if (ctx.colorLiteral() != null) {
@@ -183,7 +183,7 @@ public class ASTListener extends ICSSBaseListener {
 		return null;
 	}
 
-	private Selector getSelector(ICSSParser.SelectorContext ctx) {
+	private Selector getSelector(ICSSParser.SelectorContext ctx) { //returns the right type of selector
 		if(ctx.classSelector() !=null){
 			return new ClassSelector(ctx.getText());
 		} else if(ctx.idSelector() !=null){

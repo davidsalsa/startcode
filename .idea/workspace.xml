@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fed8b3ac-1e21-43ad-bdb6-6b399b7b9784" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" afterPath="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java" afterPath="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ICSS.g4" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ICSS.g4" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+            <state relative-caret-position="207">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,41 +36,9 @@
       <file leaf-file-name="ASTListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+            <state relative-caret-position="-2225">
+              <caret line="43" column="65" lean-forward="true" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EvalExpressions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/EvalExpressions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Checker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="43" column="9" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveNesting.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -112,9 +82,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/level2.icss" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/level0.icss" />
-        <option value="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSBaseVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSLexer.java" />
@@ -122,8 +90,10 @@
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ICSSVisitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/EvalExpressions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java" />
+        <option value="$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4" />
       </list>
     </option>
   </component>
@@ -591,7 +561,7 @@
       <workItem from="1554049105644" duration="10639000" />
       <workItem from="1554135389666" duration="23767000" />
       <workItem from="1554188755302" duration="5823000" />
-      <workItem from="1554214742056" duration="28603000" />
+      <workItem from="1554214742056" duration="29220000" />
     </task>
     <servers />
   </component>
@@ -628,7 +598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106865000" />
+    <option name="totallyTimeSpent" value="107482000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,6 +611,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -651,9 +622,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22974963" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13539445" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42826086" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43695652" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3315565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1029,14 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="67" lean-forward="true" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1045,37 +1008,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" column="88" lean-forward="false" selection-start-line="18" selection-start-column="88" selection-end-line="18" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/checker/Checker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="43" column="9" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="221">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/EvalExpressions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="48" />
+        <state relative-caret-position="-1513">
+          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/parser/ASTListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2225">
+          <caret line="43" column="65" lean-forward="true" selection-start-line="43" selection-start-column="65" selection-end-line="43" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/antlr4/nl/han/ica/icss/parser/ICSS.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        <state relative-caret-position="207">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/han/ica/icss/transforms/RemoveNesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

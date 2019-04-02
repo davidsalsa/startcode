@@ -35,7 +35,7 @@ WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
 stylesheet:  variableAssignment* stylerule* EOF;
-stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE_BRACE;
+stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE_BRACE; //may contain multiple delcarations, variableassignments and stylerules
 
 classSelector: CLASS_IDENT;
 idSelector: ID_IDENT;
@@ -60,6 +60,6 @@ color: 'color';
 
 variableAssignment: variableName ASSIGNMENT_OPERATOR operation* SEMICOLON;
 variableName: selector;
-operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation;
+operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation; //gives the right operation tree
 
 

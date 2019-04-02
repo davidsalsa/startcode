@@ -45,7 +45,7 @@ public class Checker {
     }
 
 
-    public void checkDeclarations(ASTNode node) {
+    public void checkDeclarations(ASTNode node) {//checks if declaration definitions have correct types
         for (ASTNode child : node.getChildren()) {
             if (child instanceof Declaration) {
             }
