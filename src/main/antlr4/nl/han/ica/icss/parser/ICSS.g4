@@ -58,7 +58,7 @@ background_color: 'background-color';
 width: 'width';
 color: 'color';
 
-variableAssignment: variableName ASSIGNMENT_OPERATOR value SEMICOLON;
+variableAssignment: variableName ASSIGNMENT_OPERATOR operation* SEMICOLON;
 variableName: selector;
 operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation;
 

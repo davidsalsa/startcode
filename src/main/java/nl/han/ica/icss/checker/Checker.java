@@ -24,7 +24,7 @@ public class Checker {
     public void check(AST ast) {
         ArrayList<ASTNode> body = ast.root.body;
 
-        for (ASTNode nodes : body) {
+        for (ASTNode nodes : body) {//stores all the defined variables in hashmap.
             if (nodes instanceof VariableAssignment) {
                 String variableName = ((VariableAssignment) nodes).name.name;
                 Expression variableReferenceChild = (Expression) nodes.getChildren().get(1);
@@ -37,7 +37,7 @@ public class Checker {
                 checkUndefinedVariables(node);
                 checkOperation(node);
                 checkDeclarations(node);
-            } else if (node instanceof VariableAssignment) {
+            } else if (node instanceof VariableAssignment) { //checks for undefined variables in variable definition
                 checkUndefinedVariables(node);
                 checkOperation(node);
             }
@@ -58,7 +58,6 @@ public class Checker {
                 Expression expression = ((Declaration) child).expression;
                 if (expression instanceof Operation) {
                     recOperations(expression);
-
                 }
             }
         }
