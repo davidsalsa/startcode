@@ -8,9 +8,7 @@ import java.util.LinkedList;
 import nl.han.ica.icss.ast.*;
 import nl.han.ica.icss.ast.literals.ColorLiteral;
 import nl.han.ica.icss.ast.literals.ScalarLiteral;
-import nl.han.ica.icss.ast.operations.AddOperation;
 import nl.han.ica.icss.ast.operations.MultiplyOperation;
-import nl.han.ica.icss.ast.operations.SubtractOperation;
 import nl.han.ica.icss.ast.types.*;
 
 
@@ -71,11 +69,15 @@ public class Checker {
             astNode.setError("Cannot use color literals in an operation!");
         } else if (astNode instanceof Literal) {
             return astNode;
-        } else if (astNode instanceof VariableReference) { //if there's a variable reference return the definition.
-            return definedVariables.get(((VariableReference) astNode).name);
-        } else if(astNode instanceof Operation) {
+        } else if (astNode instanceof VariableReference) { //the node is a reference.
+            if (definedVariables.containsKey(((VariableReference) astNode).name)) { //if referenced variable is in the hashmap return definition
+                return recOperations(definedVariables.get(((VariableReference) astNode).name));
+            } else astNode.setError("Error! Reference to undefined variable!"); //else return undefined var error
+
+        } else if (astNode instanceof Operation) {
             for (ASTNode child : astNode.getChildren()) {
                 recOperations(child);
+                checkUndefinedVariables(child);
             }
         }
         checkMul(astNode);
