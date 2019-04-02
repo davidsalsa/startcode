@@ -39,7 +39,8 @@ stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE
 
 classSelector: CLASS_IDENT;
 idSelector: ID_IDENT;
-tagSelector: LOWER_IDENT |CAPITAL_IDENT;
+tagSelector: LOWER_IDENT;
+capital_ident: CAPITAL_IDENT;
 
 selector: classSelector|idSelector|tagSelector;
 
@@ -52,14 +53,15 @@ scalarLiteral: SCALAR;
 
 value: pixelLiteral | colorLiteral | percentageLiteral | scalarLiteral | variableName;
 
-propertyName: background_color | width | color | variableName;
+propertyName: background_color | width | color | height| variableName;
 
 background_color: 'background-color';
 width: 'width';
 color: 'color';
+height: 'height';
 
 variableAssignment: variableName ASSIGNMENT_OPERATOR operation* SEMICOLON;
-variableName: selector;
+variableName: capital_ident;
 operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation; //gives the right operation tree
 
 

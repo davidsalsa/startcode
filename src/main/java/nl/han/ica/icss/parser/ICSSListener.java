@@ -58,6 +58,16 @@ public interface ICSSListener extends ParseTreeListener {
 	 */
 	void exitTagSelector(ICSSParser.TagSelectorContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link ICSSParser#capital_ident}.
+	 * @param ctx the parse tree
+	 */
+	void enterCapital_ident(ICSSParser.Capital_identContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ICSSParser#capital_ident}.
+	 * @param ctx the parse tree
+	 */
+	void exitCapital_ident(ICSSParser.Capital_identContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link ICSSParser#selector}.
 	 * @param ctx the parse tree
 	 */
@@ -167,6 +177,16 @@ public interface ICSSListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitColor(ICSSParser.ColorContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link ICSSParser#height}.
+	 * @param ctx the parse tree
+	 */
+	void enterHeight(ICSSParser.HeightContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link ICSSParser#height}.
+	 * @param ctx the parse tree
+	 */
+	void exitHeight(ICSSParser.HeightContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link ICSSParser#variableAssignment}.
 	 * @param ctx the parse tree

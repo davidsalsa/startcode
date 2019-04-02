@@ -41,6 +41,12 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitTagSelector(ICSSParser.TagSelectorContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link ICSSParser#capital_ident}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitCapital_ident(ICSSParser.Capital_identContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link ICSSParser#selector}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -106,6 +112,12 @@ public interface ICSSVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitColor(ICSSParser.ColorContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link ICSSParser#height}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitHeight(ICSSParser.HeightContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link ICSSParser#variableAssignment}.
 	 * @param ctx the parse tree
