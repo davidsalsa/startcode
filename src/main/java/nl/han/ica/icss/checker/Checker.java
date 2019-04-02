@@ -50,20 +50,12 @@ public class Checker {
     public void checkDeclarations(ASTNode node, HashMap<String, Expression> definedVariables){
         for(ASTNode child : node.getChildren()){
             if(child instanceof Declaration) {
-                if(((Declaration) child).expression instanceof ColorLiteral){
-
-                } else if(((Declaration) child).expression instanceof PercentageLiteral){
-
-                } else if (((Declaration) child).expression instanceof PixelLiteral){
-
-                } else if(((Declaration) child).expression instanceof ScalarLiteral){
-
-                }
             }
         }
     }
 
     public void checkOperation(ASTNode node, HashMap<String, Expression> definedVariables) {
+        HashMap<String, Expression> operation;
         for (ASTNode child : node.getChildren()) {
             if (child instanceof Declaration) {
                 Expression expression = ((Declaration) child).expression;
@@ -80,45 +72,15 @@ public class Checker {
             astNode.setError("Cannot use color literals in an operation!");
         } else if (astNode instanceof Literal) {
             return astNode;
-        } else if (astNode instanceof VariableReference) {
+        } else if (astNode instanceof VariableReference) { //if there's a variable reference return the definition.
             return definedVariables.get(((VariableReference) astNode).name);
         } else {
             for (ASTNode child : astNode.getChildren()) {
                 recOperations(child, definedVariables);
             }
         }
-        checkPlusMinOperations(astNode, definedVariables);
         checkMul(astNode, definedVariables);
         return astNode;
-    }
-
-    public void checkPlusMinOperations(ASTNode astNode, HashMap<String, Expression> definedVariables) {
-        if (astNode instanceof AddOperation) {
-            ASTNode left = recOperations(((AddOperation) astNode).lhs, definedVariables);
-            ASTNode right = recOperations(((AddOperation) astNode).rhs, definedVariables);
-
-            if (left.getClass() != right.getClass()) {
-
-                if (!(right instanceof Operation)) {
-                    right.setError("Left and right operator do not match!");
-                } else if(right instanceof  MultiplyOperation){
-                    if(((MultiplyOperation) right).lhs.getClass() != left.getClass() && ((MultiplyOperation) right).rhs.getClass() != left.getClass()){
-                        right.setError("Left and right operator do not match!");
-                    }
-                }
-            }
-        }
-        if (astNode instanceof SubtractOperation) {
-            ASTNode left = recOperations(((SubtractOperation) astNode).lhs, definedVariables);
-            ASTNode right = recOperations(((SubtractOperation) astNode).rhs, definedVariables);
-
-            if (left.getClass() != right.getClass()) {
-
-                if (!(right instanceof Operation)) {
-                    right.setError("Left and right operator do not match!");
-                }
-            }
-        }
     }
 
     public void checkMul(ASTNode astNode, HashMap<String, Expression> definedVariables) { //Check if mul operation contains scalar.
