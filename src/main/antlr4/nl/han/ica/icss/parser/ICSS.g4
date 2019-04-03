@@ -35,14 +35,14 @@ WS: [ \t\r\n]+ -> skip;
 
 //--- PARSER: ---
 stylesheet:  variableAssignment* stylerule* EOF;
-stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE_BRACE; //may contain multiple delcarations, variableassignments and stylerules
+stylerule: selector OPEN_BRACE declaration* variableAssignment* stylerule* CLOSE_BRACE; //may contain multiple declarations, variableassignments and stylerules
 
 classSelector: CLASS_IDENT;
 idSelector: ID_IDENT;
 tagSelector: LOWER_IDENT;
 capital_ident: CAPITAL_IDENT;
 
-selector: classSelector|idSelector|tagSelector;
+selector: classSelector|idSelector|tagSelector; //may contain every identifier besides capital
 
 declaration: propertyName COLON operation* SEMICOLON;
 
@@ -61,7 +61,7 @@ color: 'color';
 height: 'height';
 
 variableAssignment: variableName ASSIGNMENT_OPERATOR operation* SEMICOLON;
-variableName: capital_ident;
-operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation; //gives the right operation tree
+variableName: capital_ident; //may only start with a capital
+operation: value #inputvalue | operation MUL operation #multiplyOperation | operation (PLUS|MIN) operation  #plusOrMinOperation; //operation tree
 
 
