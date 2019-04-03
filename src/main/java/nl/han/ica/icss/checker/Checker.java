@@ -52,15 +52,24 @@ public class Checker {
         }
     }
 
-    public void checkOperation(ASTNode node) { //looks for operations
+
+    public ASTNode checkOperation(ASTNode node) { //looks for operations
         for (ASTNode child : node.getChildren()) {
-            if (child instanceof Declaration) {
+            if(child instanceof Stylerule){ // if child is stylerule, recursively check children.
+                return checkOperation(child);
+            } else if (child instanceof Declaration) {
                 Expression expression = ((Declaration) child).expression;
+                if (expression instanceof VariableReference) {
+                    if (!definedVariables.containsKey(((VariableReference) ((Declaration) child).expression).name)) {
+                        ((Declaration) child).expression.setError("Error! Reference to undefined variable!");
+                    }
+                }
                 if (expression instanceof Operation) {
-                    recOperations(expression);
+                    return recOperations(expression);
                 }
             }
         }
+        return null;
     }
 
     public ASTNode recOperations(ASTNode astNode) { //recursively go through all the nodes in an operation
@@ -73,14 +82,12 @@ public class Checker {
                 return recOperations(definedVariables.get(((VariableReference) astNode).name));
             } else astNode.setError("Error! Reference to undefined variable!"); //else return undefined var error
 
-        } else if (astNode instanceof Operation) { //if the node is an operation
+        }  else if (astNode instanceof Operation) { //if the node is an operation
             for (ASTNode child : astNode.getChildren()) { //for every child
                 recOperations(child); //Go through the children nodes
-                checkUndefinedVariables(child); //check if the children use undefined variables.
             }
         }
         checkMul(astNode);
-        checkAdd(astNode);
         return astNode;
     }
 
@@ -93,10 +100,6 @@ public class Checker {
                 astNode.setError("Multiply operations requires at least one scalar value!");
             }
         }
-    }
-
-    public void checkAdd(ASTNode astNode) {
-
     }
 
     public void checkUndefinedVariables(ASTNode node) { //Check if the hashmap contains the variable specified.
