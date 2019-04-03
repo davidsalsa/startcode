@@ -18,7 +18,6 @@ public class RemoveNesting implements Transform {
         for (ASTNode node : nestedStylerules) {
             ast.root.addChild(node); //adds all the nestings in to the roots child list.
         }
-
     }
 
     public void updateNestedStyleRules(ASTNode node) {
