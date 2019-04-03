@@ -17,3 +17,5 @@
 |GE01|5|80| 
 |GE02|5|85| 
 
+Ik mis allen CH02, checkt of bij optellen/aftrekken linker en rechterwaarde gelijke types zijn.
+Het checkt wel of vermeningvuldiging alleen werkt met minstens een scalaire waarde.
