@@ -34,22 +34,42 @@ public class Checker {
 
         for (ASTNode node : body) {
             if (node instanceof Stylerule) {
-                checkUndefinedVariables(node);
                 checkOperation(node);
                 checkDeclarations(node);
             } else if (node instanceof VariableAssignment) { //checks for undefined variables in variable definition
-                checkUndefinedVariables(node);
                 checkOperation(node);
             }
         }
     }
 
 
-    public void checkDeclarations(ASTNode node) {//checks if declaration definitions have correct types
+    public ASTNode checkDeclarations(ASTNode node) {//checks if declaration definitions have correct types
         for (ASTNode child : node.getChildren()) {
+            if(child instanceof Stylerule){ // if child is stylerule, recursively check children.
+                return checkDeclarations(child);
+            }
             if (child instanceof Declaration) {
+                if(((Declaration) child).expression instanceof VariableReference){ // if instance of var ref
+                    if (definedVariables.containsKey(((VariableReference) ((Declaration) child).expression).name)) { // if var ref is defined var
+                        ((Declaration) child).expression = definedVariables.get(((VariableReference) ((Declaration) child).expression).name);//expression = var ref expression.
+                    } else {
+                        node.setError("Error! Reference to undefined variable!"); //else return undefined var error
+                        return null; //stop function
+                    }
+                }
+                //Switch case, if expression type doesn't match property set error.
+                if(((Declaration) child).property.name.matches("background-color") && !(((Declaration) child).expression instanceof ColorLiteral)){
+                    ((Declaration) child).expression.setError("Expression type does not match property.");
+                } else  if(((Declaration) child).property.name.matches("color") && !(((Declaration) child).expression instanceof ColorLiteral)){
+                    ((Declaration) child).expression.setError("Expression type does not match property.");
+                } else  if(((Declaration) child).property.name.matches("width") && ((((Declaration) child).expression instanceof ColorLiteral) || (((Declaration) child).expression instanceof ScalarLiteral))){
+                    ((Declaration) child).expression.setError("Expression type does not match property.");
+                } else if(((Declaration) child).property.name.matches("height") && ((((Declaration) child).expression instanceof ColorLiteral) || (((Declaration) child).expression instanceof ScalarLiteral))){
+                    ((Declaration) child).expression.setError("Expression type does not match property.");
+                }
             }
         }
+        return  node;
     }
 
 
@@ -60,7 +80,7 @@ public class Checker {
             } else if (child instanceof Declaration) {
                 Expression expression = ((Declaration) child).expression;
                 if (expression instanceof VariableReference) {
-                    if (!definedVariables.containsKey(((VariableReference) ((Declaration) child).expression).name)) {
+                    if (!definedVariables.containsKey(((VariableReference) ((Declaration) child).expression).name)) { //if
                         ((Declaration) child).expression.setError("Error! Reference to undefined variable!");
                     }
                 }
@@ -98,18 +118,6 @@ public class Checker {
 
             if (!(left instanceof ScalarLiteral) && !(right instanceof ScalarLiteral)) {
                 astNode.setError("Multiply operations requires at least one scalar value!");
-            }
-        }
-    }
-
-    public void checkUndefinedVariables(ASTNode node) { //Check if the hashmap contains the variable specified.
-        for (ASTNode child : node.getChildren()) {
-            if (child instanceof Declaration) {
-                if (((Declaration) child).expression instanceof VariableReference) {
-                    if (!definedVariables.containsKey(((VariableReference) ((Declaration) child).expression).name)) {
-                        ((Declaration) child).expression.setError("Error! Reference to undefined variable!");
-                    }
-                }
             }
         }
     }
