@@ -4,6 +4,7 @@ import nl.han.ica.icss.ast.*;
 
 import javax.swing.text.Style;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Stack;
 
 public class RemoveNesting implements Transform {
@@ -20,6 +21,8 @@ public class RemoveNesting implements Transform {
         for (ASTNode node : nestedStylerules) {
             ast.root.addChild(node); //adds all the nestings in to the roots child list.
         }
+
+
     }
 
     public void updateNestedStyleRules(ASTNode node) {
@@ -27,6 +30,7 @@ public class RemoveNesting implements Transform {
             for (ASTNode nested : node.getChildren()) {
                 if (nested instanceof Stylerule) {
                     ((Stylerule)nested).selectors.add(((Stylerule) node).selectors.get(0)); //if first layer nesting, add selector of top rule
+                    Collections.reverse(((Stylerule) nested).selectors); //reverses the selectors to the correct order
                     nestedStylerules.add(nested); //add the nesting to the list
                     getNestedStyleRules(nested); //check recursively for nesting within nesting and store into list
                     ((Stylerule) node).body.remove(nested); //removes all nestings from stylerules
@@ -42,6 +46,7 @@ public class RemoveNesting implements Transform {
                     ((Stylerule) child).selectors.add(selector); //adds selector to nestings within nestings
                 }
                 ((Stylerule) nested).body.remove(child); //removes all stylerule children from nesting
+                Collections.reverse(((Stylerule) child).selectors); //reverses the selectors to the correct order
                 nestedStylerules.add(child); //adds nestings to list
                 getNestedStyleRules(child); //recursively checks for more nestings withing nesting
 
