@@ -26,19 +26,7 @@ public class Generator {
 		//Check the list for every selector type for the right order.
 		if(root instanceof Stylerule){
 			for(Selector selector : ((Stylerule) root).selectors){
-				if(selector instanceof ClassSelector) {
 					css += selector + " ";
-				}
-			}
-			for(Selector selector : ((Stylerule) root).selectors){
-				if(selector instanceof TagSelector) {
-					css += selector + " ";
-				}
-			}
-			for(Selector selector : ((Stylerule) root).selectors){
-				if(selector instanceof IdSelector) {
-					css += selector + " ";
-				}
 			}
 			css += "{ \n";
 		}
